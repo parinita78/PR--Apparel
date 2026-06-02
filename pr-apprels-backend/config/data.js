@@ -1,0 +1,171 @@
+// ─── PR Apprels — Product Data (Backend) ─────────────────────────────────────
+
+const products = [
+  // ── UNSTITCHED SUITS ──────────────────────────────────────────────────────
+  {
+    id: 1, name: "Ivory Lawn 3-Piece Suit", category: "unstitched", material: "Lawn",
+    price: 1299, originalPrice: 1799,
+    description: "Delicate ivory lawn 3-piece suit with intricate floral embroidery border on the dupatta. Lightweight and breathable — perfect for summer gatherings. Includes shirt fabric, trouser fabric, and chiffon dupatta.",
+    image: "https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=600&q=80",
+    images: ["https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=600&q=80"],
+    badge: "Sale", rating: 4.5, reviews: 128, inStock: true, pieces: 3,
+    occasion: ["Casual", "Festive"],
+  },
+  {
+    id: 2, name: "Rose Gold Chiffon Suit", category: "unstitched", material: "Chiffon",
+    price: 2499, originalPrice: 2999,
+    description: "Luxurious rose gold chiffon 3-piece suit with subtle shimmer threads. Ideal for evening events and formal wear.",
+    image: "https://images.unsplash.com/photo-1585487000160-6ebcfceb0d03?w=600&q=80",
+    images: ["https://images.unsplash.com/photo-1585487000160-6ebcfceb0d03?w=600&q=80"],
+    badge: "New", rating: 4.8, reviews: 64, inStock: true, pieces: 3,
+    occasion: ["Evening", "Formal"],
+  },
+  {
+    id: 3, name: "Midnight Silk Anarkali Suit", category: "unstitched", material: "Silk",
+    price: 3299, originalPrice: 3999,
+    description: "Deep midnight blue pure silk suit with golden zari border and hand-embroidered yoke panel. Perfect for bridal functions.",
+    image: "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?w=600&q=80",
+    images: ["https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?w=600&q=80"],
+    badge: "Bestseller", rating: 4.9, reviews: 215, inStock: true, pieces: 3,
+    occasion: ["Bridal", "Formal", "Wedding"],
+  },
+  {
+    id: 4, name: "Pearl White Organza Suit", category: "unstitched", material: "Silk",
+    price: 4199, originalPrice: 4999,
+    description: "Sheer pearl white organza suit with hand-embroidered floral clusters. A wedding favourite radiating grace and luxury.",
+    image: "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=600&q=80",
+    images: ["https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=600&q=80"],
+    badge: "Premium", rating: 5.0, reviews: 38, inStock: true, pieces: 3,
+    occasion: ["Bridal", "Wedding"],
+  },
+  {
+    id: 5, name: "Sky Blue Cotton Suit", category: "unstitched", material: "Cotton",
+    price: 999, originalPrice: 1299,
+    description: "Soft sky blue pure cotton suit ideal for daily wear. Classic block print on shirt fabric with solid trouser and contrast dupatta.",
+    image: "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=600&q=80",
+    images: ["https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=600&q=80"],
+    badge: "Sale", rating: 4.2, reviews: 310, inStock: true, pieces: 3,
+    occasion: ["Casual", "Daily Wear"],
+  },
+  {
+    id: 6, name: "Emerald Green Georgette Suit", category: "unstitched", material: "Georgette",
+    price: 2799, originalPrice: 3400,
+    description: "Rich emerald green georgette suit with subtle thread embroidery. Ideal for parties and gatherings.",
+    image: "https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=600&q=80",
+    images: ["https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=600&q=80"],
+    badge: "New", rating: 4.6, reviews: 47, inStock: true, pieces: 3,
+    occasion: ["Party", "Festive"],
+  },
+  {
+    id: 7, name: "Dusty Mauve Cotton Suit", category: "unstitched", material: "Cotton",
+    price: 1199, originalPrice: 1400,
+    description: "Comfortable dusty mauve cotton suit with pintuck detailing. Easy wash, relaxed fit.",
+    image: "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=600&q=80",
+    images: ["https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=600&q=80"],
+    badge: null, rating: 4.1, reviews: 156, inStock: true, pieces: 3,
+    occasion: ["Casual", "Daily Wear"],
+  },
+  {
+    id: 8, name: "Crimson Banarasi Silk Suit", category: "unstitched", material: "Silk",
+    price: 5499, originalPrice: 6500,
+    description: "Opulent crimson Banarasi silk suit woven with intricate gold and silver zari brocade.",
+    image: "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?w=600&q=80",
+    images: ["https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?w=600&q=80"],
+    badge: "Premium", rating: 4.9, reviews: 92, inStock: true, pieces: 3,
+    occasion: ["Bridal", "Wedding", "Festive"],
+  },
+  {
+    id: 9, name: "Pastel Peach Linen Suit", category: "unstitched", material: "Linen",
+    price: 1499, originalPrice: 1800,
+    description: "Soft pastel peach linen suit with natural texture and modern minimalist aesthetic.",
+    image: "https://images.unsplash.com/photo-1551232864-3f0890e580d9?w=600&q=80",
+    images: ["https://images.unsplash.com/photo-1551232864-3f0890e580d9?w=600&q=80"],
+    badge: null, rating: 4.3, reviews: 74, inStock: true, pieces: 3,
+    occasion: ["Casual", "Office"],
+  },
+  {
+    id: 10, name: "Aqua Blue Chikankari Suit", category: "unstitched", material: "Cotton",
+    price: 2199, originalPrice: 2799,
+    description: "Elegant aqua blue cotton suit with authentic Lucknowi chikankari hand embroidery.",
+    image: "https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=600&q=80",
+    images: ["https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=600&q=80"],
+    badge: "Bestseller", rating: 4.7, reviews: 183, inStock: true, pieces: 3,
+    occasion: ["Casual", "Festive", "Office"],
+  },
+  // ── SEMI-STITCHED SUITS ───────────────────────────────────────────────────
+  {
+    id: 17, name: "Sage Green Cotton Salwar Suit", category: "semi-stitched", material: "Cotton",
+    price: 1899, originalPrice: 2200,
+    description: "Earthy sage green cotton suit, semi-stitched for custom fitting. Hand-block printed motifs along the hem.",
+    image: "https://images.unsplash.com/photo-1594938298603-c8148c4b4d7f?w=600&q=80",
+    images: ["https://images.unsplash.com/photo-1594938298603-c8148c4b4d7f?w=600&q=80"],
+    badge: null, rating: 4.3, reviews: 92, inStock: true, pieces: 3,
+    occasion: ["Casual", "Festive"],
+  },
+  {
+    id: 18, name: "Blush Pink Georgette Suit", category: "semi-stitched", material: "Georgette",
+    price: 2799, originalPrice: 3200,
+    description: "Soft blush pink georgette suit with sequin work on the neckline. Semi-stitched for easy customisation.",
+    image: "https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=600&q=80",
+    images: ["https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=600&q=80"],
+    badge: "New", rating: 4.6, reviews: 47, inStock: true, pieces: 3,
+    occasion: ["Party", "Festive"],
+  },
+  {
+    id: 20, name: "Wine Red Velvet Suit", category: "semi-stitched", material: "Silk",
+    price: 3999, originalPrice: 4799,
+    description: "Regal wine red velvet suit with pre-embroidered gold zardozi on the yoke.",
+    image: "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?w=600&q=80",
+    images: ["https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?w=600&q=80"],
+    badge: "Premium", rating: 4.8, reviews: 61, inStock: true, pieces: 3,
+    occasion: ["Wedding", "Festive", "Bridal"],
+  },
+  {
+    id: 21, name: "Powder Blue Chikankari Suit", category: "semi-stitched", material: "Cotton",
+    price: 2299, originalPrice: 2799,
+    description: "Delicate powder blue cotton suit with authentic chikankari embroidery on the full kurta front.",
+    image: "https://images.unsplash.com/photo-1594938298603-c8148c4b4d7f?w=600&q=80",
+    images: ["https://images.unsplash.com/photo-1594938298603-c8148c4b4d7f?w=600&q=80"],
+    badge: "Bestseller", rating: 4.7, reviews: 204, inStock: true, pieces: 3,
+    occasion: ["Casual", "Festive", "Office"],
+  },
+  {
+    id: 29, name: "Royal Blue Embroidered Suit", category: "semi-stitched", material: "Georgette",
+    price: 3199, originalPrice: 3799,
+    description: "Striking royal blue georgette suit with dense silver thread embroidery on the front and back yoke.",
+    image: "https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=600&q=80",
+    images: ["https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=600&q=80"],
+    badge: "Premium", rating: 4.9, reviews: 75, inStock: true, pieces: 3,
+    occasion: ["Festive", "Wedding", "Bridal"],
+  },
+  {
+    id: 32, name: "Marigold Silk Lehenga Suit", category: "semi-stitched", material: "Silk",
+    price: 4599, originalPrice: 5499,
+    description: "Radiant marigold yellow silk lehenga-style suit with heavy kundan and zardozi embroidery.",
+    image: "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=600&q=80",
+    images: ["https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=600&q=80"],
+    badge: "Premium", rating: 5.0, reviews: 29, inStock: true, pieces: 3,
+    occasion: ["Bridal", "Wedding"],
+  },
+];
+
+const categories = [
+  {
+    id: "semi-stitched", label: "Semi-Stitched",
+    description: "Tailored to your shape — minimal finishing required",
+    image: "https://images.unsplash.com/photo-1594938298603-c8148c4b4d7f?w=500&q=80",
+    count: products.filter((p) => p.category === "semi-stitched").length,
+  },
+  {
+    id: "unstitched", label: "Unstitched",
+    description: "Design your own silhouette from scratch",
+    image: "https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=500&q=80",
+    count: products.filter((p) => p.category === "unstitched").length,
+  },
+];
+
+const materials = ["Cotton", "Silk", "Linen", "Georgette", "Chiffon", "Lawn"];
+
+const occasions = ["Casual", "Daily Wear", "Office", "Festive", "Party", "Wedding", "Bridal", "Formal", "Evening"];
+
+module.exports = { products, categories, materials, occasions };
