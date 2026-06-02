@@ -110,13 +110,7 @@ The API call is made inside `src/components/AIChatbot.jsx`. The app is designed 
 
 If running standalone, add an API key header to the fetch call in `AIChatbot.jsx`:
 ```js
-headers: {
-  "Content-Type": "application/json",
-  "x-api-key": "YOUR_ANTHROPIC_API_KEY",
-  "anthropic-version": "2023-06-01",
-  "anthropic-dangerous-direct-browser-access": "true",
-}
-```
+
 
 ---
 
