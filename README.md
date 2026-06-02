@@ -120,7 +120,7 @@ Frontend runs on `http://localhost:5173`
 
 | Home Page | Shop Page | Cart Page |
 |-----------|-----------|-----------|
-| ![Home](Screenshots/home.png) | ![Shop](Screenshots/shop.png) | ![Cart](Screenshots/cart.png) |
+| ![Home](Screenshots/Home.png) | ![Shop](Screenshots/Shop.png) | ![Cart](Screenshots/Cart.png) |
 
 ---
 
