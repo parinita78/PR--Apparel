@@ -1,5 +1,5 @@
 # PR Apparel 🛍️
-### Full-Stack E-Commerce Clothing Platform
+## Full-Stack E-Commerce Clothing Platform
 
 PR Apparel is a full-stack MERN e-commerce application built to provide a seamless online clothing shopping experience. The project demonstrates RESTful API development, JWT-based authentication, MongoDB integration, and responsive frontend development using React and Tailwind CSS.
 ---
