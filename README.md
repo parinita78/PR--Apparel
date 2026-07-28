@@ -72,6 +72,15 @@ PR--Apparel/
     ├── config/                 # DB connection
     └── server.js
 ```
+## 📡 API Overview
+
+| Module | Endpoint | Purpose | Authentication |
+|---------|----------|---------|---------------|
+| Authentication | `/api/auth/*` | User registration, login, profile management | Partial |
+| Products | `/api/products/*` | Browse products, categories, filters, and product details | No |
+| Cart | `/api/cart/*` | Add, update, remove, and manage shopping cart | No |
+| Orders | `/api/orders/*` | Place and manage customer orders | Yes |
+| AI Chatbot | `/api/chat` | AI-powered shopping assistant using the GROQ API | No |
 
 ---
 
